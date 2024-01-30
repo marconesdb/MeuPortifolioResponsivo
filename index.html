@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Meu Portifólio</title>
+   
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Opção para a imagem no navbar -->
+            <a href="index.html" class="text-white text-xl font-bold flex items-center">
+                <img src="./imagens/Logomarca.png" alt="Logomarca" class="h-10 w-auto mr-2">
+                
+            </a>
+            <!-- Menu Hambúrguer -->
+            <div class="flex md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Menu de Navegação -->
+            <div class="hidden md:flex space-x-4" id="menu-links">
+                <a href="./index.html" class="text-white">Início</a>
+                <a href="./view/Projetos.html" class="text-white">Projetos</a>
+                <a href="./view/Contato.html" class="text-white">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da Página -->
+    <div class="container mx-auto mt-8">
+        <h1 class="text-3xl font-bold mb-4"> Página Index.HTML</h1>
+        <p>Este é um exemplo básico de site criado com Tailwind CSS.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white text-center py-4 mt-8">
+        <div class="container mx-auto flex flex-col items-center justify-center md:flex-row md:items-center">
+            <img class="img-footer mb-4 h-10 w-auto md:mb-0" src="./imagens/Logomarca.png" alt="Logomarca do Footer">
+            <div class="md:ml-4">
+                <p class="footer-p-text">&copy; 2024 Marcone Silva de Brito. Todos os direitos reservados.</p>
+                <p class="footer-p-text">Desenvolvedor Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menuLinks = document.getElementById('menu-links');
+            menuLinks.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
