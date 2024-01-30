@@ -6,60 +6,118 @@
     <!-- Link Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="../css/index.css">
-    <title>Meu Portifólio</title>
+    <title>Meu Portfólio - Projetos</title>
    
 </head>
-<body class="bg-gray-100">
-    <!-- Navbar -->
-    <nav class="bg-blue-500 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- Opção para a imagem no navbar -->
-            <a href="index.html" class="text-white text-xl font-bold flex items-center">
-                <img src="../imagens/Logomarca.png" alt="Logomarca" class="h-10 w-auto mr-2">
-                
-            </a>
-            <!-- Menu Hambúrguer -->
-            <div class="flex md:hidden">
-                <button id="menu-toggle" class="text-white focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-            <!-- Menu de Navegação -->
-            <div class="hidden md:flex space-x-4" id="menu-links">
-                <a href="../index.html" class="text-white">Início</a>
-                <a href="../view/Projetos.html" class="text-white">Projetos</a>
-                <a href="../view/Contato.html" class="text-white">Contato</a>
-            </div>
+<body class="bg-gray-100 flex flex-col min-h-screen" style="font-family: 'Rajdhani', sans-serif;">
+ 
+<!-- Navbar -->
+<nav class="bg-white-500 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Opção para a imagem no navbar -->
+        <a href="../index.html" class="text-white text-xl font-bold flex items-center">
+            <img src="../imagens/Logomarca.png" alt="Logomarca" class="h-18 w-auto mr-2">
+        </a>
+        <!-- Menu Hambúrguer -->
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-dark focus:outline-none">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
         </div>
-    </nav>
+        <!-- Menu de Navegação -->
+        <div class="hidden md:flex space-x-4" id="menu-links">
+            <a href="../index.html" class="text-dark nav-link" style="font-weight:700;">Início</a>
+            <a href="../view/Projetos.html" class="text-dark nav-link" style="font-weight:700;">Projetos</a>
+            <a href="../view/Contato.html" class="text-dark nav-link" style="font-weight:700;">Contato</a>
+        </div>
+    </div>
+</nav>
 
-    <!-- Conteúdo da Página -->
-    <div class="container mx-auto mt-8">
-        <h1 class="text-3xl font-bold mb-4"> Página Projetos.HTML</h1>
-        <p>Este é um exemplo básico de site criado com Tailwind CSS.</p>
+<!-- Conteúdo da Página -->
+<div id="container" class="container mx-auto flex-grow mt-8 px-4 sm:px-6 lg:px-8">
+    <div class="container" style="max-width: 1000px; padding: 20px; border-radius: 38px; border: 2px solid #343a40; box-shadow: 10px 10px rgba(0, 0, 0, 1.5); font-size: 1.3rem; font-weight: 400; background-color: rgb(217, 229, 230);">
+        <h1 class="text-3xl font-bold mb-4" style="color: rgb(11, 121, 230);">Projetos</h1>
+        <p>Aqui você encontra meus projetos e detalhes sobre eles.</p>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-blue-500 text-white text-center py-4 mt-8">
-        <div class="container mx-auto flex flex-col items-center justify-center md:flex-row md:items-center">
-            <img class="img-footer mb-4 h-10 w-auto md:mb-0" src="../imagens/Logomarca.png" alt="Logomarca do Footer">
-            <div class="md:ml-4">
-                <p class="footer-p-text">&copy; 2024 Marcone Silva de Brito. Todos os direitos reservados.</p>
-                <p class="footer-p-text">Desenvolvedor Web</p>
-            </div>
+    <!-- Adicione aqui o conteúdo específico dos projetos -->
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-bold mb-2">Projeto 1</h2>
+            <a href="https://github.com/marconesdb/SiteSolarDeJesus-V1.3-MVC"><img src="../imagens/Captura de Tela (4133).png" alt="Imagem do Projeto 1" class="object-cover h-[200px] w-full mb-2"></a>
+            <p>Site Solar de Jesus</p>
         </div>
-    </footer>
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-bold mb-2">Projeto 2</h2>
+            <a href="https://github.com/marconesdb/BookListApp"><img src="../imagens/BookListApp.png" alt="Imagem do Projeto 2" class="object-cover h-[200px] w-full mb-2"></a>
+            <p>BookListApp</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-bold mb-2">Projeto 3</h2>
+            <a href="https://github.com/marconesdb/CarteiraDeTokens"><img src="../imagens/Carteira de Tokens.png" alt="Imagem do Projeto 3" class="object-cover h-[200px] w-full mb-2"></a>
+            <p>Carteira de Transferência de Tokens.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-bold mb-2">Projeto 4</h2>
+            <a href=""><img src="caminho/para/imagem.jpg" alt="Imagem do Projeto 4" class="object-cover h-[200px] w-full mb-2"></a>
+            <p>Descrição do projeto 4.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-bold mb-2">Projeto 5</h2>
+            <a href=""><img src="caminho/para/imagem.jpg" alt="Imagem do Projeto 5" class="object-cover h-[200px] w-full mb-2"></a>
+            <p>Descrição do projeto 5.</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-bold mb-2">Projeto 6</h2>
+            <a href=""><img src="caminho/para/imagem.jpg" alt="Imagem do Projeto 6" class="object-cover h-[200px] w-full mb-2"></a>
+            <p>Descrição do projeto 6.</p>
+        </div>
+        <!-- Card 7 -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-bold mb-2">Projeto 7</h2>
+            <a href=""><img src="caminho/para/imagem.jpg" alt="Imagem do Projeto 7" class="object-cover h-[200px] w-full mb-2"></a>
+            <p>Descrição do projeto 7.</p>
+        </div>
+        <!-- Card 8 -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-bold mb-2">Projeto 8</h2>
+            <a href=""><img src="caminho/para/imagem.jpg" alt="Imagem do Projeto 8" class="object-cover h-[200px] w-full mb-2"></a>
+            <p>Descrição do projeto 8.</p>
+        </div>
+        <!-- Card 9 -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-bold mb-2">Projeto 9</h2>
+            <a href=""><img src="caminho/para/imagem.jpg" alt="Imagem do Projeto 9" class="object-cover h-[200px] w-full mb-2"></a>
+            <p>Descrição do projeto 9.</p>
+        </div>
+    </div>
+</div> 
 
-    <!-- Scripts -->
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            var menuLinks = document.getElementById('menu-links');
-            menuLinks.classList.toggle('hidden');
-        });
-    </script>
+<!-- Footer -->
+<footer class="bg-white-100 text-dark text-center py-4 mt-auto">
+    <div class="container mx-auto flex flex-col items-center justify-center md:flex-row md:items-center">
+        <img class="img-footer mb-4 h-10 w-auto md:mb-0" src="../imagens/Logomarca.png" alt="Logomarca do Footer">
+        <div class="md:ml-4">
+            <p class="footer-p-text">&copy; 2024 Marcone Silva de Brito. Todos os direitos reservados.</p>
+            <p class="footer-p-text">Desenvolvedor Web</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menuLinks = document.getElementById('menu-links');
+        menuLinks.classList.toggle('hidden');
+    });
+</script>
 </body>
 </html>
