@@ -16,5 +16,105 @@
     background: transparent;
   }
 
+  /* CSS Fonte */
+  @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+  /* Fonte CSS Google */
 
+
+.rajdhani-light {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rajdhani-regular {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rajdhani-medium {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rajdhani-semibold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rajdhani-bold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+  font-family: "Rajdhani", sans-serif;
+}
+/* CSS para responsividade Mobile/DeskTop */
+
+/* CSS para o layout responsivo */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+
+.text-section {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.image-section {
+  text-align: center;
+}
+
+.responsive-div {
+  text-align: center;
+  
+}
+
+.responsive-div2 {
+  text-align: justify;
+  margin-top: 20px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .h1-nome {
+    font-size: 1.5rem;
+  }
+
+  .responsive-div2 {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* Estilos adicionados para dispositivos móveis */
+@media (max-width: 768px) {
+  .nav-link {
+      padding: 0; /* Remover o espaçamento interno */
+      background-color: transparent; /* Remover o fundo */
+      border: none; /* Remover a borda */
+      box-shadow: none; /* Remover a sombra */
+      border-radius: 0; /* Remover o arredondamento das bordas */
+      font-size: inherit; /* Usar o tamanho de fonte padrão */
+      font-weight: inherit; /* Usar o peso de fonte padrão */
+  }
+}
 

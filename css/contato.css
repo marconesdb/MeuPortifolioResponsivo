@@ -18,3 +18,16 @@
 
 
   
+/* Estilos adicionados para dispositivos móveis */
+@media (max-width: 768px) {
+  .nav-link {
+      padding: 0; /* Remover o espaçamento interno */
+      background-color: transparent; /* Remover o fundo */
+      border: none; /* Remover a borda */
+      box-shadow: none; /* Remover a sombra */
+      border-radius: 0; /* Remover o arredondamento das bordas */
+      font-size: inherit; /* Usar o tamanho de fonte padrão */
+      font-weight: inherit; /* Usar o peso de fonte padrão */
+  }
+}
+
