@@ -11,11 +11,12 @@
 
     <!-- Link Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/contato.css">
     <title>Meu Portfólio - Contato</title>
    
 </head>
-<body class="bg-gray-100 flex flex-col min-h-screen" style="font-family: 'Rajdhani', sans-serif;">
+<body class="bg-gray-100 flex flex-col min-h-screen">
  
 <!-- Navbar -->
 <nav class="bg-white-500 p-4">
@@ -43,11 +44,10 @@
 
     <!-- Conteúdo da Página -->
 <div id="container" class="container mx-auto flex-grow mt-8 px-4 sm:px-6 lg:px-8">
-    <div class="container" style="max-width: 1000px; padding: 20px; border-radius: 38px; border: 2px solid #343a40; box-shadow: 10px 10px rgba(0, 0, 0, 1.5); font-size: 1.3rem; font-weight: 400; background-color: rgb(217, 229, 230);">
-        <h1 class="text-3xl font-bold mb-4" style="color: rgb(11, 121, 230);">Contato</h1>
-        <p>Entre em contato conosco utilizando as informações abaixo:</p>
-        <p>E-mail: marconebritt@gmail.com</p>
-        <p>Telefone: (38) 99218-2727</p>
+    <div class="container div-container">
+        <h1 class="h1-text  text-3xl font-bold mb-4">Contato</h1>
+        <p id="typing-text"></p>
+        
         <!-- Redes Sociais -->
     <div class="mt-4 flex space-x-4">
         <a href="https://www.facebook.com/marcone.silv.3" class="text-blue-500"><i class="fab fa-facebook-f"></i></a>
@@ -79,5 +79,6 @@
             menuLinks.classList.toggle('hidden');
         });
     </script>
+    <script src="../script/Contato.js"></script>
 </body>
 </html>

@@ -1,37 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: inherit;
-    font-size: 100%;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    color: inherit;
-    text-align: inherit;
-    text-decoration: none;
-    list-style: none;
-    border: 0;
-    outline: 0;
-    background: transparent;
+  /* CSS Fonte */
+  @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+  /* Fonte CSS Google */
+  
+  body {
+    font-family: 'Rajdhani', 'sans-serif';
   }
 
+#menu-links a {
+  font-weight: 700;
+}
 
-  
+.container-secundario{
+  max-width: 1000px;
+  padding: 20px; 
+  border-radius: 38px; 
+  border: 2px solid #343a40; 
+  box-shadow: 10px 10px rgba(0, 0, 0, 1.5);
+  font-size: 1.3rem;
+  font-weight: 400; 
+  background-color: rgb(217, 229, 230);
+}
 
+.h1-text{
+  color: rgb(11, 121, 230);
+}
 
-
-  
-/* Estilos adicionados para dispositivos móveis */
-@media (max-width: 768px) {
-  .nav-link {
-      padding: 0; /* Remover o espaçamento interno */
-      background-color: transparent; /* Remover o fundo */
-      border: none; /* Remover a borda */
-      box-shadow: none; /* Remover a sombra */
-      border-radius: 0; /* Remover o arredondamento das bordas */
-      font-size: inherit; /* Usar o tamanho de fonte padrão */
-      font-weight: inherit; /* Usar o peso de fonte padrão */
-  }
+.card-style{
+  background-color: rgb(217, 229, 230);
 }
 
